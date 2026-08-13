@@ -1,9 +1,13 @@
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Drawer } from 'expo-router/drawer';
+import CustomDrawer from "../components/CustomDrawer";
 
 export default function RootLayout() {
   return (
     <Drawer
+    drawerContent={(props) => (
+    <CustomDrawer {...props} />
+  )}
       screenOptions={{
         drawerStyle: {
           backgroundColor: '#0b1f3a',
@@ -95,7 +99,7 @@ export default function RootLayout() {
 
           drawerIcon: ({ color, size }) => (
             <MaterialCommunityIcons
-              name="file-account"
+              name="calendar-clock"
               size={size || 22}
               color={color}
             />
