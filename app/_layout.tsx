@@ -5,9 +5,9 @@ import CustomDrawer from "../components/CustomDrawer";
 export default function RootLayout() {
   return (
     <Drawer
-    drawerContent={(props) => (
-    <CustomDrawer {...props} />
-  )}
+      drawerContent={(props) => (
+        <CustomDrawer {...props} />
+      )}
       screenOptions={{
         drawerStyle: {
           backgroundColor: '#0b1f3a',
@@ -122,8 +122,6 @@ export default function RootLayout() {
           ),
         }}
       />
-
-
     </Drawer>
   );
 }
